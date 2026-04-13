@@ -1,0 +1,31 @@
+
+        # Global Parameters
+        Version                     1
+        Geometry                    /home/mrmegalib/exchange/COSItools/data/massmodels/massmodel-cosi-smex-detailed-CDR-v35-BGOthre0/COSISMEX.sim_BGOreading.geo.setup
+
+        # Physics list
+        PhysicsListEM               LivermorePol
+
+        # Output formats
+        StoreSimulationInfo         init-only
+
+        # Store shield counts
+        PreTriggerMode              EveryEventWithHits
+
+        # Run and source parameters
+        Run                         GRBSim
+        GRBSim.FileName             bn161026373
+        GRBSim.Time                 5000.0
+        GRBSim.Source               bn161026373
+        bn161026373.ParticleType    1
+        bn161026373.Beam            FarFieldPointSource 61.774 343.007
+
+        # Spectrum 
+        bn161026373.Spectrum        Comptonized 10 10000 -0.777012 284.2669
+
+        # Average photon flux in photon/cm2/s 
+        bn161026373.Flux            4.878665288240845
+
+        # Lightcurve
+        bn161026373.Lightcurve      File false /home/mrmegalib/exchange/COSItools/data/projects/grb-simulations/catalogs_new/Archive_Light_Curve/GRB110717180_Merge_nb_n8.dat
+        
